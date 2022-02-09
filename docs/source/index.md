@@ -11,8 +11,8 @@ Contents
 --------
 
 ```{toctree}
-   Tenants
-   Applications
-   Users
-   Tenant Integration
+tenants
+applications
+users
+Tenant Integration <tenant_integration>
 ```
