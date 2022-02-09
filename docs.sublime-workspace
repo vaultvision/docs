@@ -1,0 +1,616 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"dat",
+				"dataset"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"user",
+				"userstate"
+			],
+			[
+				"se",
+				"settings"
+			],
+			[
+				"dash",
+				"dashboard"
+			],
+			[
+				"sh",
+				"showErrors"
+			],
+			[
+				"err",
+				"errorCB"
+			],
+			[
+				"service_",
+				"service_version"
+			],
+			[
+				"priv",
+				"privacy_version"
+			],
+			[
+				"pri",
+				"privacy_url"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"domain",
+				"domaininput"
+			],
+			[
+				"clas",
+				"classList"
+			],
+			[
+				"vv",
+				"vvenc"
+			],
+			[
+				"suppor",
+				"support_email"
+			],
+			[
+				"custom",
+				"customRoutes"
+			],
+			[
+				"app",
+				"applications"
+			],
+			[
+				"i",
+				"isStatic"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"ten",
+				"tenant"
+			],
+			[
+				"dro",
+				"dropzone"
+			],
+			[
+				"t",
+				"tenants"
+			],
+			[
+				"co",
+				"console"
+			],
+			[
+				"ser",
+				"service"
+			],
+			[
+				"is",
+				"is-valid"
+			],
+			[
+				"texta",
+				"textarea"
+			],
+			[
+				"re",
+				"reject"
+			],
+			[
+				"res",
+				"resolve"
+			],
+			[
+				"invo",
+				"invoke"
+			],
+			[
+				"ins",
+				"insubmission"
+			],
+			[
+				"cons",
+				"console"
+			],
+			[
+				"form-",
+				"form-wizard-progress"
+			],
+			[
+				"us",
+				"userstate"
+			],
+			[
+				"ac",
+				"activateInit"
+			],
+			[
+				"reg",
+				"registerFormSubmit"
+			],
+			[
+				"show",
+				"showalert"
+			],
+			[
+				"butt",
+				"buttonText"
+			],
+			[
+				"inner",
+				"innerHTML"
+			],
+			[
+				"doc",
+				"document"
+			],
+			[
+				"span",
+				"buildSpanLinkLookup"
+			],
+			[
+				"mess",
+				"message"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"m",
+				"message"
+			],
+			[
+				"error",
+				"errorBuffer"
+			],
+			[
+				"g",
+				"getAttribute"
+			],
+			[
+				"setC",
+				"setCustomValidity"
+			],
+			[
+				"r",
+				"response"
+			],
+			[
+				"tim",
+				"timeout"
+			],
+			[
+				"ched",
+				"checked"
+			],
+			[
+				"def",
+				"default"
+			],
+			[
+				"ou",
+				"outDir"
+			],
+			[
+				"s",
+				"series"
+			],
+			[
+				"f",
+				"foo2"
+			],
+			[
+				"rad",
+				"radioBtn"
+			],
+			[
+				"pas",
+				"password"
+			],
+			[
+				"tr",
+				"transition"
+			],
+			[
+				"va",
+				"validateEmail"
+			],
+			[
+				"att",
+				"attributes"
+			],
+			[
+				"c",
+				"checkValidity"
+			],
+			[
+				"font",
+				"font-size"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"lint",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"lin",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"ran",
+				"Random:Int"
+			],
+			[
+				"selec",
+				"Snippet: selection"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/nproctor-limited/Projects/docs"
+	],
+	"file_history":
+	[
+		"/C/Users/nproctor-limited/Projects/managewebui/src/js/vv_utils.js",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/js/utils.js",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/js/sitemap.json",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/pug/tenants/1/applications/index.pug",
+		"/C/Users/nproctor-limited/Downloads/star_vvkey_io_199845072/star_vvkey_io.crt",
+		"/C/Users/nproctor-limited/Downloads/star_vvkey_io_199845072/DigiCertCA.crt",
+		"/C/Users/nproctor-limited/Downloads/star_vvkey_io_199845072/TrustedRoot.crt",
+		"/C/Users/nproctor-limited/Downloads/vv-1644098665703.csv",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/pug/mixins/wizard/vv_WizardContent.pug",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/pug/tenants/1/applications/1/settings.pug",
+		"/C/Users/nproctor-limited/Projects/managewebui/mngREADME.md",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/js/vv_api.js",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/js/vv_applicationDetails.js",
+		"/C/Users/nproctor-limited/Projects/managewebui/gulp/watch.gulp.js",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/pug/mixins/navbars/vv_Mixins.pug",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/js/vv_tenantDetails.js",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/js/vv_mirage.js",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/js/theme.js",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/js/vv_tenantWizard.js",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/js/vv_startWizard.js",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/pug/error.pug",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/js/vv_errorDetails.js",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/pug/mixins/home/dashboard-alt/vv_CardStatistics.pug",
+		"/C/Users/nproctor-limited/Projects/managewebui/gulp/pug.gulp.js",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/pug/layouts/Layout.pug",
+		"/C/Users/nproctor-limited/Projects/managewebui/.eslintrc",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/pug/index.pug",
+		"/C/Users/nproctor-limited/Projects/managewebui/gulp/script.gulp.js",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/js/vv_application_lists.js",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/pug/tenants/1/settings.pug",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/pug/mixins/pages/vv_Settings.pug",
+		"/C/Users/nproctor-limited/Projects/managewebui/gulp/gulp.json",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/pug/mixins/home/dashboard-alt/vv_DailyLogins.pug",
+		"/C/Users/nproctor-limited/Projects/managewebui/README.md",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/pug/tenants/1/index.pug",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/js/wizard.js",
+		"/C/Users/nproctor-limited/AppData/Local/Temp/Temp1_google.com!vaultvision.com!1643587200!1643673599.zip/google.com!vaultvision.com!1643587200!1643673599.xml",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/pug/mixins/navbars/vv_NavbarVertical.pug",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/pug/tenants/1/wizard.pug",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/js/vv_activate.js",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/js/vv_forgotpassword.js",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/js/vv_loginValidation.js",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/js/vv_userListing.js",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/js/vv_registerValidation.js",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/js/form-validation.js",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/pug/mixins/pages/vv_TenantSettings.pug",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/js/vv_userDetails.js",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/pug/mixins/pages/vv_userSettings.pug",
+		"/C/Users/nproctor-limited/Projects/managewebui/vendors.json",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/pug/mixins/authentication/vv_StartWizardForm.pug",
+		"/C/Users/nproctor-limited/Projects/managewebui/package.json",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/js/email-validator.js",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/pug/layouts/vv_LayoutTheme.pug",
+		"/C/Users/nproctor-limited/Projects/go-embed-manage/static/assets/js/vv_mirage.js",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/pug/tenants/1/users/index.pug",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/pug/tenants/1/users/1/settings.pug",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/pug/start.pug",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/pug/mixins/Variables.pug",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/pug/mixins/common/Footer.pug",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/pug/logout.pug",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/pug/pages/authentication/wizard.pug",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/pug/mixins/navbars/NavbarTop.pug",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/pug/mixins/authentication/vv_LoginForm.pug",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/pug/mixins/authentication/vv_RegisterForm.pug",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/scss/theme/_vv_security-button.scss",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/js/vv_dropzone.js",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/pug/mixins/components/Modals.pug",
+		"/C/Users/nproctor-limited/Downloads/Fw_ Message from Jean Morgan.eml",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/pug/application/settings.pug",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/pug/mixins/authentication/vv_CardAuthenticationSplit.pug",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/pug/application/user-list-settings.pug",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/pug/application/user-list.pug",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/pug/dashboard/vv-application-list.pug",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/js/vv_tenantWizard_debug.js",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/js/navbar-vertical.js",
+		"/C/Users/nproctor-limited/Projects/managewebui/gulp/w3c.gulp.js",
+		"/C/Users/nproctor-limited/Projects/managewebui/gulp/link.gulp.js",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/pug/application/error-list.pug",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/pug/application/error-list-view.pug",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/pug/mixins/authentication/wizard/vv_WizardContent.pug",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/pug/changelog.pug",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/pug/mixins/authentication/vv_ErrorContent.pug",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/pug/tenant/1/routed.pug",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/pug/mixins/navbars/vv_TenantPicker.pug",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/pug/mixins/navbars/Mixins.pug",
+		"/C/Users/nproctor-limited/Projects/managewebui/public/tenant/routed.html",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/js/sitemap.js",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/pug/tenant/start.pug",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/pug/mixins/common/vv_SettingsPanel.pug",
+		"/C/Users/nproctor-limited/Projects/managewebui/gulpfile.js",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/js/sitemap.jstmp",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/js/vv_changeLogoDimensions.js",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/pug/mixins/authentication/LogOutContent.pug",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/pug/loggedout.pug",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/pug/mixins/common/Card.pug",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/js/vv_application_lists_edits.js",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/js/dropzone.js",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/pug/dashboard/vv_application_list.pug",
+		"/C/Users/nproctor-limited/Projects/managewebui/.gitignore",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/pug/mixins/authentication/wizard/vv_FormWizardHeader.pug",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/pug/start_wizard.pug",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/pug/mixins/e-commerce/vv_Applications.pug",
+		"/F/Users/nproctor/Google Drive/Projects/volcanopub/js/splashbanner.js",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/scss/theme/plugins/_dropzone.scss",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/scss/theme/_avatar.scss",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/pug/mixins/layouts/vv_LayoutContent.pug",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/pug/mixins/layouts/vv_LayoutContentProd.pug",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/pug/mixins/authentication/wizard/vv_WizardHeader.pug",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/pug/mixins/home/dashboard-alt/vv_CardDipositeStatus.pug",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/js/charts/echarts/line-payment.js",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/scss/theme/_colors.scss",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/pug/mixins/widgets/Forms.pug",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/pug/layouts/LayoutBasic.pug",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/scss/theme/_variables.scss",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/pug/mixins/authentication/wizard/WizardHeader.pug",
+		"/C/Users/nproctor-limited/Projects/iam/build/local/Makefile",
+		"/C/Users/nproctor-limited/Projects/iam/build/local/README.md",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/pug/mixins/home/e-commerce/CardGreetings.pug",
+		"/C/Users/nproctor-limited/Projects/managewebui/public/assets/img/favicons/site.webmanifest",
+		"/C/Users/nproctor-limited/Projects/managewebui/public/assets/img/favicons/browserconfig.xml",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/pug/mixins/common/Logo.pug",
+		"/C/Users/nproctor-limited/Projects/managewebui/src/pug/mixins/authentication/wizard/WizardContent.pug",
+		"/M/vaultvision/favicon_package_v0.16/site.webmanifest",
+		"/M/vaultvision/favicon_package_v0.16/browserconfig.xml",
+		"/C/Users/nproctor-limited/Projects/managewebui/public/assets/img/favicons/manifest.json",
+		"/C/Users/nproctor-limited/Downloads/ajax.csv",
+		"/C/Users/nproctor-limited/Downloads/top-1m.csv",
+		"/C/Users/nproctor-limited/Projects/artifacts/Falcon-v3.4.0-and-v2.8.2/falcon-v3.4.0/src/scss/theme/plugins/_tinymce.scss"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 101.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"folders":
+	[
+		{
+			"path": "C:\\Users\\nproctor-limited\\Projects\\docs"
+		}
+	],
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.SublimeLinter Messages":
+	{
+		"height": 483.0
+	},
+	"output.exec":
+	{
+		"height": 126.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"vv_Start",
+				"src\\pug\\mixins\\authentication\\vv_StartWizardForm.pug"
+			],
+			[
+				"",
+				"src\\pug\\mixins\\authentication\\wizard\\vv_WizardContent.pug"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 323.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 592.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 398.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
