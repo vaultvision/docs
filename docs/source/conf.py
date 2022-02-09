@@ -2,9 +2,9 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'Vault Vision Documentation'
+copyright = '2022, Vault Vision Inc.'
+author = 'Vault Vision'
 
 release = '0.1'
 version = '0.1.0'
