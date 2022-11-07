@@ -24,7 +24,7 @@ Update the URL values in the (Vault Vision Management Panel)[https://manage.vaul
 
 
 
-## Step copy the environment variables
+## Step 5 copy the environment variables
 
 Copy over the env vars from the (Vault Vision Management Panel)[https://manage.vaultvision.com/go#applications] into your react application, something like:
 ```
@@ -39,7 +39,7 @@ const client_id = process.env.CLIENT_ID;
 const client_secret = process.env.CLIENT_SECRET;
 ```
 
-## Step create a OIDC client using the open source library
+## Step 6 create a OIDC client using the open source library
 ```
 Issuer.discover(tenantUrl).then( (vaultVisionIssuer) => {
   console.log('Discovered issuer %s %O', vaultVisionIssuer.issuer, vaultVisionIssuer.metadata);
@@ -56,7 +56,7 @@ Issuer.discover(tenantUrl).then( (vaultVisionIssuer) => {
 });
 ```
 
-## Step create a login route
+## Step 7 create a login route
 
 Something similar to
 ```
@@ -87,7 +87,7 @@ app.get('/login', (req, res) => {
 })
 ```
 
-## Step create a logout route
+## Step 8 create a logout route
 ```
 app.get('/logout', (req, res) => {
   res.clearCookie("jwt");
@@ -95,7 +95,7 @@ app.get('/logout', (req, res) => {
 })
 ```
 
-## Step create a callback route
+## Step 9 create a callback route
 ```
 app.all(post_authorize_redirect, (req, res) => {
   console.log('Inside GET /postauthorize callback function')
@@ -141,8 +141,8 @@ app.all(post_authorize_redirect, (req, res) => {
 
 ```
 
-## Step import users, and assign a new forigen key
+## Step 10 import users, and assign a new forigen key
 Once users are imported into the Vault Vision tenant, take the returned table of users with the new assign Vault Vision subscriberId and attach that as a forigen key into your user table.
 
-## Step update any session creation and tear down
+## Step 11 update any session creation and tear down
 New user sessions should be created in the oidc callback, and destroyed in the start logout route.
