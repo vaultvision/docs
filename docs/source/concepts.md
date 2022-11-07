@@ -11,7 +11,7 @@ When implementing an OIDC Application to integrate with an Auth Provider, there 
 - Auth Provider redirecting the user back to the Application after a successful logout
 - Auth Provider redirecting the user back to the Application when the Auth Provider did not receive the proper login request.  The Auth Provider needs to know a URL on the Application where the user can see a login button and can restart a user login request
 
-![Login Flow](concepts/login_flow.svg)
+![Login Flow](concepts/concept1.svg)
 
 ## Step 1
 
