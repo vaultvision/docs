@@ -1,15 +1,17 @@
-Tenant Integration
+Reference
 ==================
 
-## Prerequisites
+## Typical OIDC Application to Auth Provider Flow Diagrams
 
-Some kind of web server with the following:
-	- outbound network access to nextgenauth.vaultvision.com over port 443
-	- ability to have and handle 2 incoming routes open to the internet over port 443
-	- ability to perform 302 redirects
-	- ability to set and store 4 server-side variables (client_id, client_secret, base_url, your_callback_url). Most of the time these are stored as an environment or configuration variable.
-	- (optional) ability to maintain a session, this needed assuming you want users to only authenticate once and be in some kind of logged in state. This could be a cookie, session server, or session specific cache.
-	- (optional in the case of using a custom domain) ability to set a DNS CNAME for your custom domain that points to nextgenauth.vaultvision.com
+When implementing an OIDC Application to integrate with an Auth Provider, there are the following 6 flows to consider. 2 flows each for: signup, login, logout
+	- User starting a signup from the Application
+	- User starting a login from the Application
+	- User starting a logout from the Application
+	- Auth Provider redirecting the user back to the Application with the OIDC authentication payload after a successful signup or login
+	- Auth Provider redirecting the user back to the Application after a successful logout
+	- Auth Provider redirecting the user back to the Application when the Auth Provider did not receive the proper login request.  The Auth Provider needs to know a URL on the Application where the user can see a login button and can restart a user login request
+
+
 
 ## Step 1
 
