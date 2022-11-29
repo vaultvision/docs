@@ -1,4 +1,3 @@
-tag ?= dev
 sources = \
 		$(wildcard docs/source/* docs/source/*/*) \
 		requirements.txt \
@@ -29,7 +28,6 @@ env/bin/sphinx-build: env
 
 .PHONY: clean
 clean: clean-build clean-env
-
 
 .PHONY: clean-build
 clean-build:
