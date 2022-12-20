@@ -13,6 +13,13 @@ build: $(sources) | \
 		env/bin/sphinx-build
 	env/bin/sphinx-build docs/source docs/build/html
 
+# Note you must escape '&' in the matomo tpl as it has special meaning in sed
+release: build
+	sed -i \
+		's|<body class="wy-body-for-nav">|<body class="wy-body-for-nav matomo">\n$(shell cat matomo.tpl)|g' \
+		$$(find docs/build/html -type f -name '*.html')
+
+
 docs/build:
 	mkdir -p $(@)
 

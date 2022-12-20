@@ -34,7 +34,7 @@ For these default local applications make sure you select 'Single Page Web App' 
 
 - clone this github repo containing our React js boilerplate project <https://github.com/vaultvision/react-boilerplate-vv>
 
-- Copy over the env vars from the (Vault Vision Management Panel)[https://manage.vaultvision.com/go#applications] into a NEW .env file located at the root of the project.  You can copy this file as an example <https://github.com/vaultvision/react-boilerplate-vv/blob/master/.env-example> , or simply rename it .env and populate it with your correct env vars.
+- Copy over the env vars from the [Vault Vision Management Panel](https://manage.vaultvision.com/go#applications) into a NEW .env file located at the root of the project.  You can copy this file as an example <https://github.com/vaultvision/react-boilerplate-vv/blob/master/.env-example> , or simply rename it .env and populate it with your correct env vars.
 
 - Run the npm start command to launch a local instance
 ```
@@ -45,7 +45,7 @@ npm run start
 
 - clone this github repo containing our HTML boilerplate project <https://github.com/vaultvision/html-boilerplate>
 
-- Copy over the env vars from the (Vault Vision Management Panel)[https://manage.vaultvision.com/go#applications] into one of these files: <https://github.com/vaultvision/html-boilerplate/blob/main/src/scripts-init/oidcAppRouter.js> or <https://github.com/vaultvision/html-boilerplate/blob/main/src/scripts-init/oidcbinding.js>
+- Copy over the env vars from the [Vault Vision Management Panel](https://manage.vaultvision.com/go#applications) into one of these files: <https://github.com/vaultvision/html-boilerplate/blob/main/src/scripts-init/oidcAppRouter.js> or <https://github.com/vaultvision/html-boilerplate/blob/main/src/scripts-init/oidcbinding.js>
 
 - Run the npm start command to launch a local instance
 ```

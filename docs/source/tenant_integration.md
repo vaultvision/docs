@@ -23,6 +23,6 @@ Decide the URL locations for these 3 endpoints on your website:
 
 ## Step 2
 
-Update the URL values in the (Vault Vision Management Panel)[https://manage.vaultvision.com/go#applications] for your application.
+Update the URL values in the [Vault Vision Management Panel](https://manage.vaultvision.com/go#applications) for your application.
 
 
