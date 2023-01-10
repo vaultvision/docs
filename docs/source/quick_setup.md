@@ -1,4 +1,4 @@
-Quick Setup
+Vault Vision - User Authentication Platform - Quick Setup
 ==================
 This setup will get you up and running with a local web application where you can experiment with all the flow and integration points.
 
