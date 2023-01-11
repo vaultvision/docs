@@ -1,6 +1,6 @@
 # Vault Vision Documentation
 
-This is the repository for the documentation hosted at [https://docs.vaultvision.com](https://docs.vaultvision.com).
+This is the repository for the user authentication developer documentation hosted at [https://docs.vaultvision.com](https://docs.vaultvision.com).
 
 
 ## Quick Start
@@ -39,7 +39,7 @@ done
 
 ## Who are we?
 
-[Vault Vision](https://vaultvision.com) is a Login-as-a-Service provider whose passwordless login technology powered by authentication software and devices enables easier authentication system integration for startup developers, IT security teams and seamless security for end users.
+[Vault Vision](https://vaultvision.com) is a user authenticaiton and login management platform whose passwordless technology is powered by the most secure authentication protocols and easier authentication system integration for startup developers, IT security teams and seamless security for end users.
 
 Visit [https://docs.vaultvision.com](https://docs.vaultvision.com) to learn more!
 
