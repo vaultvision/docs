@@ -1,7 +1,7 @@
-Quick Start
+Vault Vision Quick Start
 ==================
 
-This setup will get you up and running in less than a minute.
+This setup guide will get your user authentication and login management system up and running in less than a minute.
 
 
 ## Create an Account at Vault Vision
@@ -32,7 +32,7 @@ Feel free to explore the other options in the sandbox before moving on:
 
 ## Run your own example application locally
 
-We provide example applications written in Node, Go and Python with more to come.
+We provide example auth applications written in Node, Go and Python with more to come.
 
 ```{note}
 Our system is built on open protocols that support every programming language. [Get in touch](https://vaultvision.com/contact-us/) with us if you would like support integrating with a programming language we don't currently provide an example for.
