@@ -1,6 +1,6 @@
-Getting Started
+Getting Started - Vault Visiion
 ==================
-This setup will get you up and running with a local web application where you can experiment with all the flow and integration points.
+This setup will get you up and running with a local web application where you can experiment with all the flow and integration points of Vault Vision's user authentication platform.
 
 ```{note}
 Prefer to watch a video?
