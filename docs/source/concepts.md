@@ -1,4 +1,4 @@
-Concepts (High Level Designs)
+User Authenticaiton Concepts (High Level Designs) - Vault Vision
 ==================
 
 ## Typical OIDC Application to Auth Provider Flow Diagrams
