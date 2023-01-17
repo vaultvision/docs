@@ -1,4 +1,4 @@
-Tenant Integration
+Tenant Integration - Vault Vision
 ==================
 
 ## Prerequisites
