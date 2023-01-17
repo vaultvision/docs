@@ -1,9 +1,9 @@
-Identity Providers
+Identity Providers - Vault Vision
 ==================
 
 ## What is an Identity Provider?
 
-An identity provider (aka an IdP) is a service that manages and provides user identity through some method of authentication. IdPs are where a user has registered an account along with some kind of credential that the user can use to prove their identity to the IdP. The Idp then becomes the central hub for that user to access other systems that know how to integrate with that IdP. Online services like Google and Microsoft maintain an available IdP for their users.  This means as a user of their service, you can authenticate _to_ other 3rd party systems using Microsoft and Google account credentials. This can be convient because the user can now use your application or service without having to complete another complex registration process, they can simply attach their Google or Microsoft account to your application or service through Vault Vision. Vault Vision's platform has developed these integrates with Google and Microsoft so that you don't have to.  See below for steps on how to add this functionality to your Vault Vision account.  
+An identity provider (aka an IdP) is a service that manages and provides user identity through some method of user authentication. IdPs are where a user has registered an account along with some kind of credential that the user can use to prove their identity to the IdP. The Idp then becomes the central hub for that user to access other systems that know how to integrate with that IdP. Online services like Google and Microsoft maintain an available IdP for their users.  This means as a user of their service, you can authenticate _to_ other 3rd party systems using Microsoft and Google account credentials. This can be convient because the user can now use your application or service without having to complete another complex registration process, they can simply attach their Google or Microsoft account to your application or service through Vault Vision. Vault Vision's platform has developed these integrates with Google and Microsoft so that you don't have to.  See below for steps on how to add this functionality to your Vault Vision account.  
 
 ## Options
 
