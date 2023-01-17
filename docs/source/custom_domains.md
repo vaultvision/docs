@@ -1,4 +1,4 @@
-Applications and Custom Domains - Vault Vision 
+Custom Domains - Vault Vision 
 ========
 
 ```{note} CNAME for your custom domain
