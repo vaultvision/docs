@@ -1,6 +1,6 @@
 User Authentication Quick Setup - Vault Vision
 ==================
-This setup will get you up and running with a local web application where you can experiment with all the flow and integration points.
+This Vault Vision setup will get you up and running with a local web application where you can experiment with all the flow and integration points.
 
 ```{note}
 Prefer to watch a video?
