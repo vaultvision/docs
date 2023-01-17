@@ -1,4 +1,4 @@
-Vault Vision Quick Start
+User Authentication Quick Start - Vault Vision 
 ==================
 
 This setup guide will get your user authentication and login management system up and running in less than a minute.
