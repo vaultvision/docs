@@ -3,7 +3,7 @@ User Authentication Concepts - Vault Vision
 
 ## Typical OIDC Application to Authentication Provider Flow Strategy and Diagrams
 
-When implementing an OIDC Application to integrate with an Auth Provider, there are the following 6 impmentation flows to consider. 2 flows each for: signup, login, logout
+When implementing an OIDC Application to integrate with an Auth Provider, there are the following six implementation flows to consider. Two flows each for: signup, login, logout
 - User starting a signup from the Application
 - User starting a login from the Application
 - User starting a logout from the Application
