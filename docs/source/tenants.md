@@ -1,7 +1,7 @@
 Tenants - Vault Vision
 ========
 
-Tenants are the center hub of Vault Vision's user authentication platform. It is the core entity that holds all your users, application links, and unique branding and authentication settings.
+Tenants are the center hub of [Vault Vision's](https://vaultvision.com) user authentication platform. It is the core entity that holds all your users, application links, and unique branding and authentication settings.
 
 ## Properties
 
