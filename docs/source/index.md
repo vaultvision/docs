@@ -6,7 +6,7 @@ Documentation - Vault Vision
 
 ```{note}
 If you have any issues and need support here are the following channels:
-- [Discord](https://discord.com/channels/892635599268352042/892635812359979008)
+- [Discord](https://discord.gg/VcSdzmN2dX)
 - Email: support@vaultvision.com
 ```
 
