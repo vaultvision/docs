@@ -1,4 +1,4 @@
-User Authentication Concepts and High Level Designs - Vault Vision
+User Authentication Concepts - Vault Vision
 ==================
 
 ## Typical OIDC Application to Authentication Provider Flow Strategy and Diagrams
