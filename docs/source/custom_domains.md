@@ -8,7 +8,7 @@ pointing to nextgenauth.vaultvision.com.
 
 ## Step 1
 
-Go to the [Start](https://manage.vaultvision.com/start) page in the Vault Vision Management Panel and enter your custom domain. 
+Go to the [Start](https://manage.vaultvision.com/start) page in the [Vault Vision](https://vaultvision.com) Management Panel and enter your custom domain. 
 
 ## Step 2
 
