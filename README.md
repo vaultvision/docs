@@ -1,4 +1,4 @@
-# Documentation - Vault Vision
+# Developer Docs - [Vault Vision](https://vaultvision.com) 
 
 This is the repository for the user authentication developer documentation hosted at [https://docs.vaultvision.com](https://docs.vaultvision.com).
 
