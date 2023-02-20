@@ -1,4 +1,4 @@
-Reference - Vault Vision
+Reference - [Vault Vision](https://vaultvision.com) 
 ==================
 
 ## Typical OIDC Application to User Auth Provider Flow Diagrams
