@@ -1,4 +1,4 @@
-Quick Setup - Vault Vision
+Quick Setup - [Vault Vision](https://vaultvision.com) 
 ==================
 This Vault Vision setup will get you up and running with a local web application where you can experiment with all the flow and integration points.
 
