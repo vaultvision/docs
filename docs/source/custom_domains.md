@@ -1,4 +1,4 @@
-Custom Domains - Vault Vision 
+Custom Domains - [Vault Vision](https://vaultvision.com) 
 ========
 
 ```{note} CNAME for your custom domain
