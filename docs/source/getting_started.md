@@ -1,4 +1,4 @@
-Getting Started - Vault Visiion
+Getting Started - [Vault Vision](https://vaultvision.com) 
 ==================
 This setup will get you up and running with a local web application where you can experiment with all the flow and integration points of Vault Vision's user authentication platform.
 
