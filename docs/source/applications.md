@@ -1,4 +1,4 @@
-Applications - Vault Vision 
+Applications - [Vault Vision](https://vaultvision.com) 
 ========
 
 ```{note} OAuth Client
