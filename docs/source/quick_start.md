@@ -139,7 +139,7 @@ npm run start
 ```
 
 
-## Run the [HTML boilerplate example](https://github.com/vaultvision/html-boilerplate)
+### Run the [HTML boilerplate example](https://github.com/vaultvision/html-boilerplate)
 
 - clone this github repo containing our HTML boilerplate project <https://github.com/vaultvision/html-boilerplate>
 
