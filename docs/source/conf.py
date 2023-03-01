@@ -8,8 +8,8 @@ project = 'Vault Vision Documentation'
 copyright = '2022, Vault Vision Inc.'
 author = 'Vault Vision'
 
-release = '0.1'
-version = '0.1.0'
+release = '1.1'
+version = '1.1.0'
 
 # -- General configuration
 

@@ -120,6 +120,37 @@ Run the example on localhost:
 Visit [http://localhost:8090](http://localhost:8090) in your browser.
 
 
+### Run the [React js boilerplate example](https://github.com/vaultvision/react-boilerplate-vv)
+
+```{note}
+Prefer to watch a video?
+
+[React application user authentication setup](https://www.youtube.com/watch?v=K7It1YuXyBc)
+
+```
+
+- clone this github repo containing our React js boilerplate project <https://github.com/vaultvision/react-boilerplate-vv>
+
+- Copy over the env vars from the [Vault Vision Management Panel](https://manage.vaultvision.com/go#applications) into a NEW .env file located at the root of the project.  You can copy this file as an example <https://github.com/vaultvision/react-boilerplate-vv/blob/master/.env-example> , or simply rename it .env and populate it with your correct env vars.
+
+- Run the npm start command to launch a local instance
+```
+npm run start
+```
+
+
+## Run the [HTML boilerplate example](https://github.com/vaultvision/html-boilerplate)
+
+- clone this github repo containing our HTML boilerplate project <https://github.com/vaultvision/html-boilerplate>
+
+- Copy over the env vars from the [Vault Vision Management Panel](https://manage.vaultvision.com/go#applications) into one of these files: <https://github.com/vaultvision/html-boilerplate/blob/main/src/scripts-init/oidcAppRouter.js> or <https://github.com/vaultvision/html-boilerplate/blob/main/src/scripts-init/oidcbinding.js>
+
+- Run the npm start command to launch a local instance
+```
+npm run start
+```
+
+
 ## Testing your local example
 
 With your local example running you can now see how you can use the same credentials to login to multiple applications hosted on different domains written in entirely different programming languages. Feel free to explore multiple programming languages using the same .env file.
