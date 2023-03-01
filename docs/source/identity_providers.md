@@ -1,4 +1,4 @@
-Identity Providers - Vault Vision
+Identity Providers - [Vault Vision](https://vaultvision.com)
 ==================
 
 ## What is an Identity Provider?
