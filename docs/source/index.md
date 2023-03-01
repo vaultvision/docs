@@ -30,15 +30,6 @@ Reference <reference>
 
 
 ```{toctree}
-   :caption: Integration
-
-Quick Setup <quick_setup>
-Getting Started <getting_started>
-Tenant Integration <tenant_integration>
-```
-
-
-```{toctree}
    :caption: Migrating
 
 Express Migration <express_migration>
