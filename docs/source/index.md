@@ -41,4 +41,5 @@ Express Migration <express_migration>
 
 Custom Domains <custom_domains>
 Custom Identity Providers <identity_providers>
+Custom Branding Designer <branding>
 ```
