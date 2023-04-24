@@ -5,6 +5,18 @@ This is the repository for the user authentication developer documentation hoste
 
 ## Quick Start
 
+#### prerequisites
+- python
+- pip
+- venv
+
+```bash
+apt-get install -y python3
+apt-get install -y python3-pip
+apt-get install -y python3-venv
+update-alternatives --install /usr/bin/python python /usr/bin/python3 1
+```
+
 
 ```bash
 make build
