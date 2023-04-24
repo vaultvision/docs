@@ -37,3 +37,6 @@ html_theme = 'sphinx_rtd_theme'
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
+
+# -- option to display canonical URL link tag
+html_baseurl = 'https://docs.vaultvision.com'
