@@ -7,7 +7,7 @@ These are the available pages that you can customize
 - Login
 - Signup
 - Forgot/Reset Password
-- Verify Account (This is also the one used in the MFA verification flow)
+- Verify Account (This is also the one used in the MFA/2FA verification flow)
 
 ### Custom Image Example
 See the below image and the area highlighted in red, this is the image that can be customized
