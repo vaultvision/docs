@@ -41,3 +41,6 @@ epub_show_urls = 'footnote'
 
 # -- option to display canonical URL link tag
 html_baseurl = 'https://docs.vaultvision.com'
+
+#option for sitemap
+sitemap_url_scheme = "/{link}"
