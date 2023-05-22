@@ -53,7 +53,6 @@ This is how you will connect your custom domain to our services
 
 **Require New Users to be Approved by Admin** - This is setting determines whether new users are automatically disabled/blocked on creation. This is useful if you want users to self-register but not gain access until they are approved by the tenant admin. 
 
-
 **Logo** - This is the image that will be displayed on your signup and login pages.  It will also be used in emails and system messages.
 
 ## Actions
