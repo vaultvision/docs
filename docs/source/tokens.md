@@ -58,7 +58,7 @@ Great tool for decoding and inspecting signed JWTs
 
 ## Access Tokens 
 
-Access tokens are the tokens used to make authenticated requests to resource API endpoints.  Resource servers use these access tokens to validate that the requested is 
+Access tokens are the tokens used to make authenticated requests to resource API endpoints.  Resource servers use these access tokens to validate that the request is authentic and which types of claims to resources are being requested.
 
 Formal definition from [RFC 6749](https://datatracker.ietf.org/doc/html/rfc6749#section-1.4)
 >  Access tokens are credentials used to access protected resources.  An access token is a string representing an authorization issued to the client.  The string is usually opaque to the client.  Tokens represent specific scopes and durations of access, granted by the resource owner, and enforced by the resource server and authorization server.
