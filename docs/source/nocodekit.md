@@ -1,7 +1,7 @@
 NoCode HTML and JS AirTable Toolkit - [Vault Vision](https://vaultvision.com) 
 ==================
 
-## With our NoCode HTML and JS Toolkit you will be 
+## With our NoCode HTML and JS Toolkit you will be create user specific membership based functionality for your NoCode website
 
 These are the available pages that you can customize
 - Login
