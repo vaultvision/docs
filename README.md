@@ -5,7 +5,13 @@ This is the repository for the user authentication developer documentation hoste
 
 ## Quick Start
 
-#### prerequisites
+
+```bash
+make build
+```
+
+
+#### prerequisites (Ubuntu)
 - python
 - pip
 - venv
@@ -16,25 +22,6 @@ apt-get install -y python3-pip
 apt-get install -y python3-venv
 update-alternatives --install /usr/bin/python python /usr/bin/python3 1
 ```
-
-
-```bash
-make build
-```
-
-Configure app [.env](.env.defaults) file:
-```
-cp .env.defaults .env
-vi .env  # Set your VV_ISSUER_URL
-```
-
-Run the example on localhost:
-```bash
-npm run dev
-```
-
-Visit [http://localhost:8090](http://localhost:8090) in your browser.
-
 
 ## Image Setup
 
