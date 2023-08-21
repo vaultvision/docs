@@ -35,6 +35,49 @@ for x in *.png; do
 done
 ```
 
+## Notes
+
+The directives for sphinx are declared in markdown format as shown below:
+
+RST:
+```
+.. toctree::
+   :maxdepth: 2
+
+   intro
+   strings
+   datatypes
+   numeric
+   (many more documents listed here)
+```
+
+Markdown:
+```
+\`\`\`{toctree}
+   :maxdepth: 2
+
+   intro
+   strings
+   datatypes
+   numeric
+   (many more documents listed here)
+\`\`\`
+```
+
+Supports any RST:
+```
+\`\`\`{eval-rst}
+.. toctree::
+   :maxdepth: 2
+
+   intro
+   strings
+   datatypes
+   numeric
+   (many more documents listed here)
+\`\`\`
+```
+
 
 ## Who are we?
 
@@ -55,3 +98,5 @@ https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html
 https://markdown-it.github.io/
 https://www.sphinx-doc.org/en/master/usage/markdown.html
 https://sphinx-tutorial.readthedocs.io/cheatsheet/
+https://sphinx-toolbox.readthedocs.io/en/stable/index.html
+https://docs.readthedocs.io/en/stable/guides/migrate-rest-myst.html

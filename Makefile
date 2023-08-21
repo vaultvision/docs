@@ -5,13 +5,19 @@ sources = \
 
 
 .PHONY: all
-all: env
+all: .venv
 
 .PHONY: build
 build: $(sources) | \
 		docs/build/html \
-		env/bin/sphinx-build
-	env/bin/sphinx-build docs/source docs/build/html
+		.venv/bin/sphinx-build
+	.venv/bin/sphinx-build docs/source docs/build/html
+	cp -af \
+		docs/source/js/override_default_light.js \
+		docs/build/html/_static/dark_mode_js/default_light.js
+	cp -af \
+		docs/source/js/override_theme_switcher.js \
+		docs/build/html/_static/dark_mode_js/theme_switcher.js
 
 # Note you must escape '&' in the matomo tpl as it has special meaning in sed
 release: build
@@ -27,20 +33,20 @@ docs/build:
 docs/build/html: docs/build
 	mkdir -p $(@)
 
-env: requirements.txt
-	python -m venv env
-	env/bin/pip install --upgrade pip
-	env/bin/pip install -r requirements.txt && touch $(@)
+.venv: requirements.txt
+	python -m venv .venv
+	.venv/bin/pip install --upgrade pip
+	.venv/bin/pip install -r requirements.txt && touch $(@)
 
-env/bin/sphinx-build: env
+.venv/bin/sphinx-build: .venv
 
 .PHONY: clean
-clean: clean-build clean-env
+clean: clean-build clean-venv
 
 .PHONY: clean-build
 clean-build:
 	test ! -d docs/build || rm -rf docs/build
 
-.PHONY: clean-env
-clean-env:
-	test ! -d env || rm -rf env
+.PHONY: clean-venv
+clean-venv:
+	test ! -d .venv || rm -rf .venv

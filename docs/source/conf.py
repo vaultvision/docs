@@ -21,6 +21,7 @@ extensions = [
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
     'sphinx_rtd_theme',
+    'sphinx_rtd_dark_mode',
     'sphinx_sitemap',
 ]
 
@@ -44,3 +45,5 @@ html_baseurl = 'https://docs.vaultvision.com'
 
 #option for sitemap
 sitemap_url_scheme = "/{link}"
+
+default_dark_mode = False

@@ -35,6 +35,13 @@ Reference <reference>
 Express Migration <express_migration>
 ```
 
+```{toctree}
+   :caption: API
+
+Overview <api>
+API Keys <apikeys>
+```
+
 
 ```{toctree}
    :caption: Advanced Features
@@ -44,4 +51,11 @@ Custom Identity Providers <identity_providers>
 Custom Branding Designer <branding>
 NoCode HTML and JS AirTable Toolkit <nocodekit>
 ID tokens, Access tokens, UserInfo <tokens>
+```
+
+```{toctree}
+   :caption: Community
+
+GitHub <https://github.com/vaultvision>
+Contact Us <https://vaultvision.com/contact-us/>
 ```
