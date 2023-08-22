@@ -8,7 +8,7 @@ a [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) based
 API. A quick summary:
 
  - Request bodies are [JSON-encoded](https://www.json.org/json-en.html)
- - Responses are also JSON-encoded
+ - Responses are also [JSON-encoded](https://www.json.org/json-en.html)
  - Uses standard HTTP response codes (200, 400, ...)
  - Uses standard HTTP verbs (GET, POST, ...)
  - Authentication via [API Keys](apikeys.md) (Authorization: Bearer $VV_API_KEY)
@@ -29,7 +29,7 @@ Secret API Keys have a prefix of `"vv_"` so they may be identified easily. Beyon
  - `vv_uAmkBd4nRsjFPBfsJFrmvNmKOMARrapZ`
 
 ```{note}
-Your __secret__ API Keys must be kept secure, do not share your secret API keysin publicly accessible areas.
+Your __secret__ API Keys must be kept secure, do not share your secret API keys in publicly accessible areas.
 ```
 
 Secret keys are provided in the HTTP Authorization header as a bearer token. For example:
@@ -74,16 +74,16 @@ When a failure occurs we always return JSON objects containing additional inform
 ```
 
 
-### Conventions
+### Update/Create Conventions
 
-Currently we only support POST requests, meaning the entire object is updated. To update a single field you should first fetch the latest version of the object, modify it and post it back. We ignore some system managed fields like the id, created_at and updated_at fields. See each Object for more information about mutability.
+For updates and creates, we only support full object POST requests, meaning the entire object with all of it's fields and properties needs to be included in the request. To update a single field you should first fetch the latest version of the object, modify it and post it back with all of it's fields even if the fields are not changing. We ignore some system managed fields like the id, created_at and updated_at fields. See each Object for more information about mutability.
 
-It's also worth noting that many fields are omitted when they are the zero-value for that type. For example when a bool is false we often will omit that key from the response. This may change in a future release to give more consistent experience across integrations.
+It's also worth noting that many fields are omitted when they are the zero-value or false for that type. For example when a bool is false we often will omit that key from the response. This may change in a future release to give more consistent experience across integrations.  Omitted values should be assumed to be zero-value or false.
 
 
 ## Paths
 
-The full list of request paths we currently support are organized below. The route parameters (`tenant_id`, `user_id`, etc...) are always required, the ID in the request object is ignored. Requests which end with an ID return a single object, other requests return a list of objects.
+The full list of request paths and API endpoints are organized below. The route parameters (`tenant_id`, `user_id`, etc...) are always required, the ID in the request body/payload is ignored. ONLY the id that ID part of the URL as a route parameter is used.  Request paths which end with a single specific ID will return a single object, other requests paths that end without a single specific ID will return a list of objects.
 
 Tenants:
 
@@ -122,7 +122,7 @@ Returns the list of tenants the current API Key has access to.
 Request:
 ``` shell
 curl \
-  https://api.vv.test/v1/tenants \
+  https://api.vaultvision.com/v1/tenants \
   -X GET \
   -H "accept: application/json" \
   -H "authorization: Bearer $VV_API_KEY"
@@ -192,7 +192,7 @@ Get a specific tenant by ID.
 Request:
 ``` shell
 curl \
-  https://api.vv.test/v1/tenants/local-acme01 \
+  https://api.vaultvision.com/v1/tenants/local-acme01 \
   -X GET \
   -H "accept: application/json" \
   -H "authorization: Bearer $VV_API_KEY"
@@ -232,13 +232,13 @@ Update the tenant specified by tenant_id.
 Request:
 ``` shell
 curl \
-  https://api.vv.test/v1/tenants/local-acme01 \
+  https://api.vaultvision.com/v1/tenants/local-acme01 \
   -X GET \
   -H "accept: application/json" \
   -H "authorization: Bearer $VV_API_KEY" \
     | jq -r '. += {"metadata": {"mykey1":"myval1"}}' \
     | curl \
-        https://api.vv.test/v1/tenants/local-acme01 \
+        https://api.vaultvision.com/v1/tenants/local-acme01 \
           -X POST \
           -H "accept: application/json" \
           -H "authorization: Bearer $VV_API_KEY" \
@@ -277,7 +277,7 @@ Response:
 
 ### POST /v1/tenants/:tenant_id/applications
 
-Create a new application.
+Create a new application. An application is your OIDC client used to initiate and handle authentication callbacks.
 
 Request:
 ``` shell
@@ -292,7 +292,7 @@ echo '{
     "https://example.test/auth/callback"
   ]
 }' | curl \
-       https://api.vv.test/v1/tenants/local-acme01/applications \
+       https://api.vaultvision.com/v1/tenants/local-acme01/applications \
          -X POST \
          -H "accept: application/json" \
          -H "authorization: Bearer $VV_API_KEY" \
@@ -323,7 +323,7 @@ Response:
 Request:
 ``` shell
 curl \
-  https://api.vv.test/v1/tenants/local-acme01/applications \
+  https://api.vaultvision.com/v1/tenants/local-acme01/applications \
   -X GET \
   -H "accept: application/json" \
   -H "authorization: Bearer $VV_API_KEY"
@@ -362,7 +362,7 @@ Response:
 Request:
 ``` shell
 curl \
-  https://api.vv.test/v1/tenants/local-acme01/applications/J3Or5KNHIUDl \
+  https://api.vaultvision.com/v1/tenants/local-acme01/applications/J3Or5KNHIUDl \
   -X GET \
   -H "accept: application/json" \
   -H "authorization: Bearer $VV_API_KEY"
@@ -392,13 +392,13 @@ Response:
 Request:
 ``` shell
 curl \
-  https://api.vv.test/v1/tenants/local-acme01/applications/J3Or5KNHIUDl \
+  https://api.vaultvision.com/v1/tenants/local-acme01/applications/J3Or5KNHIUDl \
   -X GET \
   -H "accept: application/json" \
   -H "authorization: Bearer $VV_API_KEY" \
     | jq -r '. += {"metadata": {"mykey1":"myval1"}}' \
     | curl \
-        https://api.vv.test/v1/tenants/local-acme01/applications/J3Or5KNHIUDl \
+        https://api.vaultvision.com/v1/tenants/local-acme01/applications/J3Or5KNHIUDl \
           -X POST \
           -H "accept: application/json" \
           -H "authorization: Bearer $VV_API_KEY" \
@@ -435,7 +435,7 @@ Delete returns the latest version of the deleted object before permanently remov
 Request:
 ``` shell
 curl \
-  https://api.vv.test/v1/tenants/local-acme01/applications/37SenPbBds9q \
+  https://api.vaultvision.com/v1/tenants/local-acme01/applications/37SenPbBds9q \
   -X DELETE \
   -H "accept: application/json" \
   -H "authorization: Bearer $VV_API_KEY"
@@ -475,7 +475,7 @@ echo '{
     "family_name": "User01"
   }
 }' | curl \
-       https://api.vv.test/v1/tenants/local-acme01/users \
+       https://api.vaultvision.com/v1/tenants/local-acme01/users \
          -X POST \
          -H "accept: application/json" \
          -H "authorization: Bearer $VV_API_KEY" \
@@ -506,7 +506,7 @@ Response:
 Request:
 ``` shell
 curl \
-  https://api.vv.test/v1/tenants/local-acme01/users \
+  https://api.vaultvision.com/v1/tenants/local-acme01/users \
   -X GET \
   -H "accept: application/json" \
   -H "authorization: Bearer $VV_API_KEY"
@@ -546,7 +546,7 @@ Get a user.
 Request:
 ``` shell
 curl \
-  https://api.vv.test/v1/tenants/local-acme01/users/9cb0Q44OoPO4 \
+  https://api.vaultvision.com/v1/tenants/local-acme01/users/9cb0Q44OoPO4 \
   -X GET \
   -H "accept: application/json" \
   -H "authorization: Bearer $VV_API_KEY"
@@ -578,13 +578,13 @@ Update a user.
 Request:
 ``` shell
 curl \
-  https://api.vv.test/v1/tenants/local-acme01/users/9cb0Q44OoPO4 \
+  https://api.vaultvision.com/v1/tenants/local-acme01/users/9cb0Q44OoPO4 \
   -X GET \
   -H "accept: application/json" \
   -H "authorization: Bearer $VV_API_KEY" \
     | jq -r '. += {"metadata": {"other_id":"other_id_01"}}' \
     | curl \
-        https://api.vv.test/v1/tenants/local-acme01/users/9cb0Q44OoPO4 \
+        https://api.vaultvision.com/v1/tenants/local-acme01/users/9cb0Q44OoPO4 \
           -X POST \
           -H "accept: application/json" \
           -H "authorization: Bearer $VV_API_KEY" \
@@ -619,7 +619,7 @@ Delete returns the latest version of the deleted object before permanently remov
 Request:
 ``` shell
 curl \
-  https://api.vv.test/v1/tenants/local-acme01/users/9cb0Q44OoPO4 \
+  https://api.vaultvision.com/v1/tenants/local-acme01/users/9cb0Q44OoPO4 \
   -X DELETE \
   -H "accept: application/json" \
   -H "authorization: Bearer $VV_API_KEY"
@@ -649,7 +649,7 @@ Response:
 Request:
 ``` shell
 curl \
-  https://api.vv.test/v1/tenants/local-acme01/users/9cb0Q44OoPO4/credentials \
+  https://api.vaultvision.com/v1/tenants/local-acme01/users/9cb0Q44OoPO4/credentials \
   -X GET \
   -H "accept: application/json" \
   -H "authorization: Bearer $VV_API_KEY"
@@ -684,7 +684,7 @@ Response:
 Request:
 ``` shell
 curl \
-  https://api.vv.test/v1/tenants/local-acme01/users/9cb0Q44OoPO4/credentials/password \
+  https://api.vaultvision.com/v1/tenants/local-acme01/users/9cb0Q44OoPO4/credentials/password \
   -X GET \
   -H "accept: application/json" \
   -H "authorization: Bearer $VV_API_KEY"
@@ -715,13 +715,13 @@ Below is an example of how to disable the users password.
 Request:
 ``` shell
 curl \
-  https://api.vv.test/v1/tenants/local-acme01/users/9cb0Q44OoPO4/credentials/password \
+  https://api.vaultvision.com/v1/tenants/local-acme01/users/9cb0Q44OoPO4/credentials/password \
   -X GET \
   -H "accept: application/json" \
   -H "authorization: Bearer $VV_API_KEY" \
     | jq -r '. += {"disabled": true}' \
     | curl \
-        https://api.vv.test/v1/tenants/local-acme01/users/9cb0Q44OoPO4/credentials/password \
+        https://api.vaultvision.com/v1/tenants/local-acme01/users/9cb0Q44OoPO4/credentials/password \
           -X POST \
           -H "accept: application/json" \
           -H "authorization: Bearer $VV_API_KEY" \
@@ -756,7 +756,7 @@ The user can still perform a password reset to gain access to their account, set
 Request:
 ``` shell
 curl \
-  https://api.vv.test/v1/tenants/local-acme01/users/9cb0Q44OoPO4/credentials/password \
+  https://api.vaultvision.com/v1/tenants/local-acme01/users/9cb0Q44OoPO4/credentials/password \
   -X DELETE \
   -H "accept: application/json" \
   -H "authorization: Bearer $VV_API_KEY"
@@ -783,6 +783,8 @@ Response:
 
 Below are some simple runnable examples using curl along side [jq](https://jqlang.github.io/jq/).
 
+jq is a command-line JSON processor that we will use in these examples as an easy way to take the JSON outputs from API calls make a minor modification and then pass that modified JSON as input into the next API call.  Because udpates to objects require ALL the fields of an object, even the fields that aren't changing, you will see the jq library used in this specific pattern is used to make updating a single field as easy possible.  Simply put, in order to make updates, you need to first do a GET of an object to fetch all its fields, then modify the fields you wish to change and POST the entire modified object back to the API.  The jq library is an easy way to do this JSON modification on the command-line.  If you are using a language like javascript or python, you can perform this pattern without the use of jq.  jq is used in these examples because they are command-line examples.
+
 
 ```{note}
 All the example data here was randomly generated for this documentation. Everything from the application secrets to the object ID's have never actually existed. You must replace them with your own data for the requests to work.
@@ -794,13 +796,13 @@ Here's a simple one liner to change the "allow_unverified" field to false using 
 
 ``` shell
 curl \
-  https://api.vv.test/v1/tenants/local-acme01 \
+  https://api.vaultvision.com/v1/tenants/local-acme01 \
   -X GET \
   -H "accept: application/json" \
   -H "authorization: Bearer $VV_API_KEY" \
     | jq -r '.settings.allow_unverified = false' \
     | curl \
-        https://api.vv.test/v1/tenants/local-acme01 \
+        https://api.vaultvision.com/v1/tenants/local-acme01 \
           -X POST \
           -H "accept: application/json" \
           -H "authorization: Bearer $VV_API_KEY" \
@@ -819,7 +821,7 @@ Here's a step by step example of how to change the "allow_unverified" field to f
 First lets get the latest version of our tenant:
 ``` shell
 curl \
-  https://api.vv.test/v1/tenants/local-acme01 \
+  https://api.vaultvision.com/v1/tenants/local-acme01 \
   -X GET \
   -H "accept: application/json" \
   -H "authorization: Bearer $VV_API_KEY"
@@ -880,7 +882,7 @@ echo '{
 Send the updated settings to the API:
 ``` shell
 curl \
-  https://api.vv.test/v1/tenants/local-acme01 \
+  https://api.vaultvision.com/v1/tenants/local-acme01 \
   -X POST \
   -H "accept: application/json" \
   -H "authorization: Bearer $VV_API_KEY" \
@@ -920,13 +922,13 @@ Here's an example of how to add metadata using curl:
 
 ``` shell
 curl \
-  https://api.vv.test/v1/tenants/local-acme01 \
+  https://api.vaultvision.com/v1/tenants/local-acme01 \
   -X GET \
   -H "accept: application/json" \
   -H "authorization: Bearer $VV_API_KEY" \
     | jq -r '. += {"metadata": {"mykey1":"myval1"}}' \
     | curl \
-        https://api.vv.test/v1/tenants/local-acme01 \
+        https://api.vaultvision.com/v1/tenants/local-acme01 \
           -X POST \
           -H "accept: application/json" \
           -H "authorization: Bearer $VV_API_KEY" \
@@ -941,13 +943,13 @@ Disabling a user blocks them from logging in.
 Request:
 ``` shell
 curl \
-  https://api.vv.test/v1/tenants/local-acme01/users/9cb0Q44OoPO4 \
+  https://api.vaultvision.com/v1/tenants/local-acme01/users/9cb0Q44OoPO4 \
   -X GET \
   -H "accept: application/json" \
   -H "authorization: Bearer $VV_API_KEY" \
     | jq -r '. += {"disabled": true}' \
     | curl \
-        https://api.vv.test/v1/tenants/local-acme01/users/9cb0Q44OoPO4 \
+        https://api.vaultvision.com/v1/tenants/local-acme01/users/9cb0Q44OoPO4 \
           -X POST \
           -H "accept: application/json" \
           -H "authorization: Bearer $VV_API_KEY" \
@@ -982,13 +984,13 @@ Enable a user that was previously disabled.
 Request:
 ``` shell
 curl \
-  https://api.vv.test/v1/tenants/local-acme01/users/9cb0Q44OoPO4 \
+  https://api.vaultvision.com/v1/tenants/local-acme01/users/9cb0Q44OoPO4 \
   -X GET \
   -H "accept: application/json" \
   -H "authorization: Bearer $VV_API_KEY" \
     | jq -r '. += {"disabled": false}' \
     | curl \
-        https://api.vv.test/v1/tenants/local-acme01/users/9cb0Q44OoPO4 \
+        https://api.vaultvision.com/v1/tenants/local-acme01/users/9cb0Q44OoPO4 \
           -X POST \
           -H "accept: application/json" \
           -H "authorization: Bearer $VV_API_KEY" \
