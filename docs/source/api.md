@@ -112,6 +112,7 @@ User Credentials:
  - [GET /v1/tenants/:tenant_id/users/:user_id/credentials](#get-v1-tenants-tenant-id-users-user-id-credentials)
  - [POST /v1/tenants/:tenant_id/users/:user_id/credentials](#post-v1-tenants-tenant-id-users-user-id-credentials)
  - [GET /v1/tenants/:tenant_id/users/:user_id/credentials/:credential_id](#get-v1-tenants-tenant-id-users-user-id-credentials-credential-id)
+  - [POST /v1/tenants/:tenant_id/users/:user_id/credentials/:credential_id](#post-v1-tenants-tenant-id-users-user-id-credentials-credential-id)
  - [DELETE /v1/tenants/:tenant_id/users/:user_id/credentials/:credential_id](#delete-v1-tenants-tenant-id-users-user-id-credentials-credential-id)
 
 
@@ -160,7 +161,7 @@ Response:
     },
     {
       "type": "Tenant",
-      "id": "local-acme01",
+      "id": "CmKJPDorO34hGJ0J",
       "name": "acme01",
       "created_at": "2023-08-18T15:11:28.708085985Z",
       "updated_at": "2023-08-18T15:11:28.708085985Z",
@@ -192,7 +193,7 @@ Get a specific tenant by ID.
 Request:
 ``` shell
 curl \
-  https://api.vaultvision.com/v1/tenants/local-acme01 \
+  https://api.vaultvision.com/v1/tenants/CmKJPDorO34hGJ0J \
   -X GET \
   -H "accept: application/json" \
   -H "authorization: Bearer $VV_API_KEY"
@@ -202,7 +203,7 @@ Response:
 ``` json
 {
   "type": "Tenant",
-  "id": "local-acme01",
+  "id": "CmKJPDorO34hGJ0J",
   "name": "acme01",
   "created_at": "2023-08-18T15:11:28.708085985Z",
   "updated_at": "2023-08-18T15:11:28.708085985Z",
@@ -232,13 +233,13 @@ Update the tenant specified by tenant_id.
 Request:
 ``` shell
 curl \
-  https://api.vaultvision.com/v1/tenants/local-acme01 \
+  https://api.vaultvision.com/v1/tenants/CmKJPDorO34hGJ0J \
   -X GET \
   -H "accept: application/json" \
   -H "authorization: Bearer $VV_API_KEY" \
     | jq -r '. += {"metadata": {"mykey1":"myval1"}}' \
     | curl \
-        https://api.vaultvision.com/v1/tenants/local-acme01 \
+        https://api.vaultvision.com/v1/tenants/CmKJPDorO34hGJ0J \
           -X POST \
           -H "accept: application/json" \
           -H "authorization: Bearer $VV_API_KEY" \
@@ -249,7 +250,7 @@ Response:
 ``` json
 {
   "type": "Tenant",
-  "id": "local-acme01",
+  "id": "CmKJPDorO34hGJ0J",
   "name": "acme01",
   "created_at": "2023-08-18T15:11:28.708085985Z",
   "updated_at": "2023-08-18T15:11:28.708085985Z",
@@ -292,7 +293,7 @@ echo '{
     "https://example.test/auth/callback"
   ]
 }' | curl \
-       https://api.vaultvision.com/v1/tenants/local-acme01/applications \
+       https://api.vaultvision.com/v1/tenants/CmKJPDorO34hGJ0J/applications \
          -X POST \
          -H "accept: application/json" \
          -H "authorization: Bearer $VV_API_KEY" \
@@ -323,7 +324,7 @@ Response:
 Request:
 ``` shell
 curl \
-  https://api.vaultvision.com/v1/tenants/local-acme01/applications \
+  https://api.vaultvision.com/v1/tenants/CmKJPDorO34hGJ0J/applications \
   -X GET \
   -H "accept: application/json" \
   -H "authorization: Bearer $VV_API_KEY"
@@ -362,7 +363,7 @@ Response:
 Request:
 ``` shell
 curl \
-  https://api.vaultvision.com/v1/tenants/local-acme01/applications/J3Or5KNHIUDl \
+  https://api.vaultvision.com/v1/tenants/CmKJPDorO34hGJ0J/applications/J3Or5KNHIUDl \
   -X GET \
   -H "accept: application/json" \
   -H "authorization: Bearer $VV_API_KEY"
@@ -392,13 +393,13 @@ Response:
 Request:
 ``` shell
 curl \
-  https://api.vaultvision.com/v1/tenants/local-acme01/applications/J3Or5KNHIUDl \
+  https://api.vaultvision.com/v1/tenants/CmKJPDorO34hGJ0J/applications/J3Or5KNHIUDl \
   -X GET \
   -H "accept: application/json" \
   -H "authorization: Bearer $VV_API_KEY" \
     | jq -r '. += {"metadata": {"mykey1":"myval1"}}' \
     | curl \
-        https://api.vaultvision.com/v1/tenants/local-acme01/applications/J3Or5KNHIUDl \
+        https://api.vaultvision.com/v1/tenants/CmKJPDorO34hGJ0J/applications/J3Or5KNHIUDl \
           -X POST \
           -H "accept: application/json" \
           -H "authorization: Bearer $VV_API_KEY" \
@@ -435,7 +436,7 @@ Delete returns the latest version of the deleted object before permanently remov
 Request:
 ``` shell
 curl \
-  https://api.vaultvision.com/v1/tenants/local-acme01/applications/37SenPbBds9q \
+  https://api.vaultvision.com/v1/tenants/CmKJPDorO34hGJ0J/applications/37SenPbBds9q \
   -X DELETE \
   -H "accept: application/json" \
   -H "authorization: Bearer $VV_API_KEY"
@@ -475,7 +476,7 @@ echo '{
     "family_name": "User01"
   }
 }' | curl \
-       https://api.vaultvision.com/v1/tenants/local-acme01/users \
+       https://api.vaultvision.com/v1/tenants/CmKJPDorO34hGJ0J/users \
          -X POST \
          -H "accept: application/json" \
          -H "authorization: Bearer $VV_API_KEY" \
@@ -506,7 +507,7 @@ Response:
 Request:
 ``` shell
 curl \
-  https://api.vaultvision.com/v1/tenants/local-acme01/users \
+  https://api.vaultvision.com/v1/tenants/CmKJPDorO34hGJ0J/users \
   -X GET \
   -H "accept: application/json" \
   -H "authorization: Bearer $VV_API_KEY"
@@ -546,7 +547,7 @@ Get a user.
 Request:
 ``` shell
 curl \
-  https://api.vaultvision.com/v1/tenants/local-acme01/users/9cb0Q44OoPO4 \
+  https://api.vaultvision.com/v1/tenants/CmKJPDorO34hGJ0J/users/9cb0Q44OoPO4 \
   -X GET \
   -H "accept: application/json" \
   -H "authorization: Bearer $VV_API_KEY"
@@ -578,13 +579,13 @@ Update a user.
 Request:
 ``` shell
 curl \
-  https://api.vaultvision.com/v1/tenants/local-acme01/users/9cb0Q44OoPO4 \
+  https://api.vaultvision.com/v1/tenants/CmKJPDorO34hGJ0J/users/9cb0Q44OoPO4 \
   -X GET \
   -H "accept: application/json" \
   -H "authorization: Bearer $VV_API_KEY" \
     | jq -r '. += {"metadata": {"other_id":"other_id_01"}}' \
     | curl \
-        https://api.vaultvision.com/v1/tenants/local-acme01/users/9cb0Q44OoPO4 \
+        https://api.vaultvision.com/v1/tenants/CmKJPDorO34hGJ0J/users/9cb0Q44OoPO4 \
           -X POST \
           -H "accept: application/json" \
           -H "authorization: Bearer $VV_API_KEY" \
@@ -619,7 +620,7 @@ Delete returns the latest version of the deleted object before permanently remov
 Request:
 ``` shell
 curl \
-  https://api.vaultvision.com/v1/tenants/local-acme01/users/9cb0Q44OoPO4 \
+  https://api.vaultvision.com/v1/tenants/CmKJPDorO34hGJ0J/users/9cb0Q44OoPO4 \
   -X DELETE \
   -H "accept: application/json" \
   -H "authorization: Bearer $VV_API_KEY"
@@ -649,7 +650,7 @@ Response:
 Request:
 ``` shell
 curl \
-  https://api.vaultvision.com/v1/tenants/local-acme01/users/9cb0Q44OoPO4/credentials \
+  https://api.vaultvision.com/v1/tenants/CmKJPDorO34hGJ0J/users/9cb0Q44OoPO4/credentials \
   -X GET \
   -H "accept: application/json" \
   -H "authorization: Bearer $VV_API_KEY"
@@ -679,12 +680,108 @@ Response:
 ```
 
 
-### GET /v1/tenants/:tenant_id/users/:user_id/credentials/:credential_id
+### POST /v1/tenants/:tenant_id/users/:user_id/credentials
+
+Create a new user credential. Only password credentials may be created in this way but we may add more credential types in the future.
+
+Below is an example of creating a credential using a plain text password:
+
+Request:
+``` shell
+echo '{
+  "type": "PasswordCredential",
+  "password": {
+    "alg": "plain",
+    "hash": "1234567890"
+  }
+}' | curl \
+       https://api.vaultvision.com/v1/tenants/CmKJPDorO34hGJ0J/users/6fkflQib1ehm/credentials \
+         -X POST \
+         -H "accept: application/json" \
+         -H "authorization: Bearer $VV_API_KEY" \
+         -d@-
+```
+
+Response:
+``` json
+{
+  "type": "PasswordCredential",
+  "id": "password",
+  "created_at": "2023-08-22T17:37:44.374457721Z",
+  "updated_at": "2023-08-22T17:37:44.374457721Z",
+  "password": {
+    "alg": "bcrypt",
+    "hash": "$2a$10$lcDfETaxcazpR47RCTBNvurpDi3ouniK5wXDNBK/eZgRE.nJYAlqa"
+  }
+}
+```
+
+```{note}
+The password credential always has the ID of `password`. Only one password credential can exist at a time.
+```
+
+When importing from an existing system it might be necessary to use the systems existing password hash functions. The following types of hashes may be specified in the `alg` field when creating a password credential:
+
+- bcrypt
+- plain
+- md5
+- sha1
+- sha256
+- sha512
+
+When `bcrypt` is specified the cost of the supplied hash must be within a tolerance of our current standard bcrypt cost of 10 or an error will be returned. If it is not identical to our current standard cost the first time a user logs in the hash will be upgraded to our standard cost factor.
+
+When `md5`, `sha1`, `sha256`, `sha512` are specified the given hash will be wrapped in the form of `$ALG|bcrypt`, i.e. `md5|bcrypt` .. `sha512|bcrypt`. This tells our authentication system to first hash the users supplied password with `$ALG` before comparing it with bcrypt. If the login is successful the stored hash will be updated and the double hashing removed, e.g. `$ALG|bcrypt` -> first login -> `bcrypt`.
+
+We can see this in action by running the following test. If you already have a hash, you can skip ahead to the request. Otherwise you can get a hash with the following commands found in most linux distros:
+
+``` shell
+echo -n "1234567890" | md5sum | awk '{print $1}'
+> e807f1fcf82d132f9bb018ca6738a19f
+echo -n "1234567890" | sha1sum | awk '{print $1}'
+> 01b307acba4f54f55aafc33bb06bbbf6ca803e9a
+echo -n "1234567890" | sha256sum | awk '{print $1}'
+> c775e7b757ede630cd0aa1113bd102661ab38829ca52a6422ab782862f268646
+echo -n "1234567890" | sha512sum | awk '{print $1}'
+> 12b03226a6d8be9c6e8cd5e55dc6c7920caaa39df14aab92d5e3ea9340d1c8a4d3d0b8e4314f1f6ef131ba4bf1ceb9186ab87c801af0d5c95b1befb8cedae2b9
+```
+
+Request:
+``` shell
+echo '{
+  "type": "PasswordCredential",
+  "password": {
+    "alg": "sha256",
+    "hash": "c775e7b757ede630cd0aa1113bd102661ab38829ca52a6422ab782862f268646"
+  }
+}' | curl \
+       https://api.vaultvision.com/v1/tenants/CmKJPDorO34hGJ0J/users/6fkflQib1ehm/credentials \
+         -X POST \
+         -H "accept: application/json" \
+         -H "authorization: Bearer $VV_API_KEY" \
+         -d@-
+```
+
+Response:
+``` json
+{
+  "type": "PasswordCredential",
+  "id": "password",
+  "created_at": "2023-08-22T17:48:47.26937881Z",
+  "updated_at": "2023-08-22T17:48:47.26937881Z",
+  "password": {
+    "alg": "sha256|bcrypt",
+    "hash": "$2a$10$j00eE6DTimtrqB9JlI.8AOW2f5RnCL/6D4y3OmCED4sIZiF6Y8U3S"
+  }
+}
+```
+
+You can see the alg is currently `sha256|bcrypt`. Now let's login to our test user so the credential can be updated to `bcrypt` and get the latest credential:
 
 Request:
 ``` shell
 curl \
-  https://api.vaultvision.com/v1/tenants/local-acme01/users/9cb0Q44OoPO4/credentials/password \
+  https://api.vaultvision.com/v1/tenants/CmKJPDorO34hGJ0J/users/6fkflQib1ehm/credentials/password \
   -X GET \
   -H "accept: application/json" \
   -H "authorization: Bearer $VV_API_KEY"
@@ -695,12 +792,37 @@ Response:
 {
   "type": "PasswordCredential",
   "id": "password",
-  "created_at": "2023-08-21T15:56:09.394956823Z",
-  "updated_at": "2023-08-21T15:56:09.394956823Z",
+  "created_at": "2023-08-22T17:48:47.26937881Z",
+  "updated_at": "2023-08-22T17:49:09.616763917Z",
   "password": {
     "alg": "bcrypt",
-    "cost": 10,
-    "hash": "JDJhJDEwJFh5TUhvQUlUZi9qek5nNEszSmIvYy5BZGlDV3U0dVouc0pYZVZIVGhwY3JBaXJidHdiZnIu"
+    "hash": "$2a$10$ocmiG9heGDB0AkLWn3XeyuXpaptESluust78Yx6vODARemPJQNqYK"
+  }
+}
+```
+
+
+### GET /v1/tenants/:tenant_id/users/:user_id/credentials/:credential_id
+
+Request:
+``` shell
+curl \
+  https://api.vaultvision.com/v1/tenants/CmKJPDorO34hGJ0J/users/6fkflQib1ehm/credentials/password \
+  -X GET \
+  -H "accept: application/json" \
+  -H "authorization: Bearer $VV_API_KEY"
+```
+
+Response:
+``` json
+{
+  "type": "PasswordCredential",
+  "id": "password",
+  "created_at": "2023-08-22T17:48:47.26937881Z",
+  "updated_at": "2023-08-22T17:49:09.616763917Z",
+  "password": {
+    "alg": "bcrypt",
+    "hash": "$2a$10$ocmiG9heGDB0AkLWn3XeyuXpaptESluust78Yx6vODARemPJQNqYK"
   }
 }
 ```
@@ -710,18 +832,18 @@ Response:
 
 Update a users credential. All credential types may be disabled/enabled and have the metadata updated, but only passowrds allow other fields to be modified.
 
-Below is an example of how to disable the users password.
+Below is an example of how to disable the users password:
 
 Request:
 ``` shell
 curl \
-  https://api.vaultvision.com/v1/tenants/local-acme01/users/9cb0Q44OoPO4/credentials/password \
+  https://api.vaultvision.com/v1/tenants/CmKJPDorO34hGJ0J/users/6fkflQib1ehm/credentials/password \
   -X GET \
   -H "accept: application/json" \
   -H "authorization: Bearer $VV_API_KEY" \
     | jq -r '. += {"disabled": true}' \
     | curl \
-        https://api.vaultvision.com/v1/tenants/local-acme01/users/9cb0Q44OoPO4/credentials/password \
+        https://api.vaultvision.com/v1/tenants/CmKJPDorO34hGJ0J/users/6fkflQib1ehm/credentials/password \
           -X POST \
           -H "accept: application/json" \
           -H "authorization: Bearer $VV_API_KEY" \
@@ -733,13 +855,12 @@ Response:
 {
   "type": "PasswordCredential",
   "id": "password",
-  "created_at": "2023-08-21T15:56:09.394956823Z",
-  "updated_at": "2023-08-21T15:56:33.56633403Z",
+  "created_at": "2023-08-22T17:48:47.26937881Z",
+  "updated_at": "2023-08-22T17:55:25.626537952Z",
   "disabled": true,
   "password": {
     "alg": "bcrypt",
-    "cost": 10,
-    "hash": "JDJhJDEwJFh5TUhvQUlUZi9qek5nNEszSmIvYy5BZGlDV3U0dVouc0pYZVZIVGhwY3JBaXJidHdiZnIu"
+    "hash": "$2a$10$ocmiG9heGDB0AkLWn3XeyuXpaptESluust78Yx6vODARemPJQNqYK"
   }
 }
 ```
@@ -756,7 +877,7 @@ The user can still perform a password reset to gain access to their account, set
 Request:
 ``` shell
 curl \
-  https://api.vaultvision.com/v1/tenants/local-acme01/users/9cb0Q44OoPO4/credentials/password \
+  https://api.vaultvision.com/v1/tenants/CmKJPDorO34hGJ0J/users/6fkflQib1ehm/credentials/password \
   -X DELETE \
   -H "accept: application/json" \
   -H "authorization: Bearer $VV_API_KEY"
@@ -767,13 +888,12 @@ Response:
 {
   "type": "PasswordCredential",
   "id": "password",
-  "created_at": "2023-08-21T15:56:09.394956823Z",
-  "updated_at": "2023-08-21T15:56:33.56633403Z",
+  "created_at": "2023-08-22T17:48:47.26937881Z",
+  "updated_at": "2023-08-22T17:55:25.626537952Z",
   "disabled": true,
   "password": {
     "alg": "bcrypt",
-    "cost": 10,
-    "hash": "JDJhJDEwJFh5TUhvQUlUZi9qek5nNEszSmIvYy5BZGlDV3U0dVouc0pYZVZIVGhwY3JBaXJidHdiZnIu"
+    "hash": "$2a$10$ocmiG9heGDB0AkLWn3XeyuXpaptESluust78Yx6vODARemPJQNqYK"
   }
 }
 ```
@@ -796,13 +916,13 @@ Here's a simple one liner to change the "allow_unverified" field to false using 
 
 ``` shell
 curl \
-  https://api.vaultvision.com/v1/tenants/local-acme01 \
+  https://api.vaultvision.com/v1/tenants/CmKJPDorO34hGJ0J \
   -X GET \
   -H "accept: application/json" \
   -H "authorization: Bearer $VV_API_KEY" \
     | jq -r '.settings.allow_unverified = false' \
     | curl \
-        https://api.vaultvision.com/v1/tenants/local-acme01 \
+        https://api.vaultvision.com/v1/tenants/CmKJPDorO34hGJ0J \
           -X POST \
           -H "accept: application/json" \
           -H "authorization: Bearer $VV_API_KEY" \
@@ -821,7 +941,7 @@ Here's a step by step example of how to change the "allow_unverified" field to f
 First lets get the latest version of our tenant:
 ``` shell
 curl \
-  https://api.vaultvision.com/v1/tenants/local-acme01 \
+  https://api.vaultvision.com/v1/tenants/CmKJPDorO34hGJ0J \
   -X GET \
   -H "accept: application/json" \
   -H "authorization: Bearer $VV_API_KEY"
@@ -831,7 +951,7 @@ Our result:
 ``` json
 {
   "type": "Tenant",
-  "id": "local-acme01",
+  "id": "CmKJPDorO34hGJ0J",
   "name": "acme01",
   "created_at": "2023-08-18T15:11:28.708085985Z",
   "updated_at": "2023-08-18T21:58:05.547823288Z",
@@ -857,7 +977,7 @@ Now put these settings in a file and edit them by hand. One option is we can use
 ``` shell
 echo '{
   "type": "Tenant",
-  "id": "local-acme01",
+  "id": "CmKJPDorO34hGJ0J",
   "name": "acme01",
   "created_at": "2023-08-18T15:11:28.708085985Z",
   "updated_at": "2023-08-18T21:58:05.547823288Z",
@@ -882,7 +1002,7 @@ echo '{
 Send the updated settings to the API:
 ``` shell
 curl \
-  https://api.vaultvision.com/v1/tenants/local-acme01 \
+  https://api.vaultvision.com/v1/tenants/CmKJPDorO34hGJ0J \
   -X POST \
   -H "accept: application/json" \
   -H "authorization: Bearer $VV_API_KEY" \
@@ -893,7 +1013,7 @@ The response should show allow_unverified setting is now set to false as well as
 ``` json
 {
   "type": "Tenant",
-  "id": "local-acme01",
+  "id": "CmKJPDorO34hGJ0J",
   "name": "acme01",
   "created_at": "2023-08-18T15:11:28.708085985Z",
   "updated_at": "2023-08-18T21:58:15.547823288Z",
@@ -922,13 +1042,13 @@ Here's an example of how to add metadata using curl:
 
 ``` shell
 curl \
-  https://api.vaultvision.com/v1/tenants/local-acme01 \
+  https://api.vaultvision.com/v1/tenants/CmKJPDorO34hGJ0J \
   -X GET \
   -H "accept: application/json" \
   -H "authorization: Bearer $VV_API_KEY" \
     | jq -r '. += {"metadata": {"mykey1":"myval1"}}' \
     | curl \
-        https://api.vaultvision.com/v1/tenants/local-acme01 \
+        https://api.vaultvision.com/v1/tenants/CmKJPDorO34hGJ0J \
           -X POST \
           -H "accept: application/json" \
           -H "authorization: Bearer $VV_API_KEY" \
@@ -943,13 +1063,13 @@ Disabling a user blocks them from logging in.
 Request:
 ``` shell
 curl \
-  https://api.vaultvision.com/v1/tenants/local-acme01/users/9cb0Q44OoPO4 \
+  https://api.vaultvision.com/v1/tenants/CmKJPDorO34hGJ0J/users/9cb0Q44OoPO4 \
   -X GET \
   -H "accept: application/json" \
   -H "authorization: Bearer $VV_API_KEY" \
     | jq -r '. += {"disabled": true}' \
     | curl \
-        https://api.vaultvision.com/v1/tenants/local-acme01/users/9cb0Q44OoPO4 \
+        https://api.vaultvision.com/v1/tenants/CmKJPDorO34hGJ0J/users/9cb0Q44OoPO4 \
           -X POST \
           -H "accept: application/json" \
           -H "authorization: Bearer $VV_API_KEY" \
@@ -984,13 +1104,13 @@ Enable a user that was previously disabled.
 Request:
 ``` shell
 curl \
-  https://api.vaultvision.com/v1/tenants/local-acme01/users/9cb0Q44OoPO4 \
+  https://api.vaultvision.com/v1/tenants/CmKJPDorO34hGJ0J/users/9cb0Q44OoPO4 \
   -X GET \
   -H "accept: application/json" \
   -H "authorization: Bearer $VV_API_KEY" \
     | jq -r '. += {"disabled": false}' \
     | curl \
-        https://api.vaultvision.com/v1/tenants/local-acme01/users/9cb0Q44OoPO4 \
+        https://api.vaultvision.com/v1/tenants/CmKJPDorO34hGJ0J/users/9cb0Q44OoPO4 \
           -X POST \
           -H "accept: application/json" \
           -H "authorization: Bearer $VV_API_KEY" \
