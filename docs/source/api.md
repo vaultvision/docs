@@ -83,7 +83,7 @@ It's also worth noting that many fields are omitted when they are the zero-value
 
 ## Paths
 
-The full list of request paths and API endpoints are organized below. The route parameters (`tenant_id`, `user_id`, etc...) are always required, the ID in the request body/payload is ignored. ONLY the id that ID part of the URL as a route parameter is used.  Request paths which end with a single specific ID will return a single object, other requests paths that end without a single specific ID will return a list of objects.
+The full list of request paths and API endpoints are organized below. The route parameters (`tenant_id`, `user_id`, etc...) are always required, the ID in the request body/payload is ignored. Only the id provided in the URL as a route parameter is used.  Request paths which end with a single specific ID will return a single object, other requests paths that end without a single specific ID will return a list of objects.
 
 Tenants:
 
