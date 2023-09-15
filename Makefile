@@ -3,7 +3,6 @@ sources = \
 		requirements.txt \
 		Makefile
 
-
 .PHONY: all
 all: .venv
 
@@ -18,6 +17,11 @@ build: $(sources) | \
 	cp -af \
 		docs/source/js/override_theme_switcher.js \
 		docs/build/html/_static/dark_mode_js/theme_switcher.js
+
+local: build
+	sed -i \
+		's|api.vaultvision.com|api.vv.test|g' \
+		$$(find docs/build/html -type f -name '*.html')
 
 # Note you must escape '&' in the matomo tpl as it has special meaning in sed
 release: build
