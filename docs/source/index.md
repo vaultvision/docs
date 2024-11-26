@@ -49,7 +49,7 @@ API Keys <apikeys>
 Custom Domains <custom_domains>
 Custom Identity Providers <identity_providers>
 Custom Branding Designer <branding>
-NoCode HTML and JS AirTable Toolkit <nocodekit>
+NoCode HTML and JS Toolkit <nocodekit>
 ID tokens, Access tokens, UserInfo <tokens>
 ```
 

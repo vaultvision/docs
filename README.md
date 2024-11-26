@@ -23,6 +23,22 @@ apt-get install -y python3-venv
 update-alternatives --install /usr/bin/python python /usr/bin/python3 1
 ```
 
+## Windows Setup
+
+Install python3, pip and venv
+From the project root folder, create the .venv and install requirements and create the build folder and run the build command
+```bash
+python -m venv .venv
+.venv/Scripts/pip install -r requirements.txt
+rm -rf docs/build && mkdir docs/build && mkdir docs/build/html
+.venv/Scripts/sphinx-build docs/source docs/build/html
+sed -i 's|<body class="wy-body-for-nav">|<body class="wy-body-for-nav matomo"><img referrerpolicy="no-referrer-when-downgrade" src="https://vaultvision.matomo.cloud/matomo.php?idsite=6\&rec=1" style="border:0;position: absolute;" alt="" />|g' $(find docs/build/html -type f -name '*.html')
+(optional command to run a local http server to verify)
+.venv/Scripts/python.exe -m http.server --bind localhost --directory docs/build/html 8080
+
+```
+
+
 ## Image Setup
 
 To add black borders to images:

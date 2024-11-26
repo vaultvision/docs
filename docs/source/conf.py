@@ -5,7 +5,7 @@ import sphinx_rtd_theme
 # -- Project information
 
 project = 'Vault Vision Documentation'
-copyright = '2022, Vault Vision Inc.'
+copyright = '2024, Vault Vision Inc.'
 author = 'Vault Vision'
 
 release = '1.1'
@@ -47,3 +47,9 @@ html_baseurl = 'https://docs.vaultvision.com'
 sitemap_url_scheme = "/{link}"
 
 default_dark_mode = False
+
+html_static_path = ['_static']
+
+html_css_files = [
+    'css/custom.css',
+]
